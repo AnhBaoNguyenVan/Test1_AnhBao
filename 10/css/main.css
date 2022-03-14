@@ -1,0 +1,88 @@
+body{
+    font-family: "Open sans",sans-serif;
+    line-height: 1.428571429;
+    color: whitesmoke;
+    min-width: 500px;
+    width: 100vw;
+    background-image: url(https://wallpapers.com/images/high/anime-house-on-snow-y8phoxlq3woqfuv3.jpg) ;
+    /* z-index: -1; */
+    position: relative;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+header{
+    text-align: center;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around ; */
+    justify-content: center;
+    max-width: 1000px;
+    z-index: 2;
+}
+nav>.nav-item{
+    margin: 0 10px;
+}
+
+nav>.nav-item>a{
+    text-decoration: none;
+    color: rgb(220, 233, 245);
+    font-weight: lighter;
+    font-size: 13px;
+}
+nav>.nav-item>a:hover{
+    color: rgba(253, 223, 89, 0.808);
+    transition: 0.5s;
+}
+main{
+    margin-top: 10px;
+    z-index: 2;
+}
+main>.main-content1{
+    max-width: 500px;
+    object-fit: contain;
+    width: 400px;
+}
+main>.main-content1>img{
+    width: 80px;
+    float: left;
+    padding-top: -10px;
+}
+main>.main-content1>h4{
+    font-weight: bold lighter;
+}
+main>.main-content1>p{
+    font-weight: lighter;
+    font-size: 10px;
+    color: rgb(248, 207, 220);
+}
+
+main>.main-content2{
+    clear: both;
+    text-align: center;
+}
+main>.main-content2>p{
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 0;
+}
+.color-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(175, 40, 238);
+    opacity: 0.5;
+    position: absolute;
+    margin: 0 auto;
+}

@@ -1,0 +1,97 @@
+body{
+    display: flex;
+
+}
+header, h3{
+    font-family:  sans-serif
+}
+
+p, .menu-item{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header#header{
+    background-color: #FFFFFF;
+    font-size: 1.35em;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+}
+nav#navbar{
+    background-color: white;
+    
+}
+
+nav .menu{
+    margin:0;
+    border-bottom: 1px solid  gray; 
+    
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+nav .menu .menu-item{
+    font-weight: 700;
+    font-size: 1.15em;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding-left: .75em;
+}
+
+nav >.menu .menu-item a{
+        text-decoration: none;
+         color: #000000;
+         background-color: rgb(255, 255, 255);
+}
+
+a, a:hover{
+    color: #000000;
+}
+
+main#main-doc{
+    padding: 0 1em;
+    width: 900px;
+}
+
+
+@media(max-width:1000px){
+   nav>.menu{
+       height: 150px;
+   }
+}
+@media(min-width:1000px){
+      
+    html{
+        font-size: 1.15em;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav#navbar{
+        width: 370px;
+        position: fixed;
+        top:0;
+    }
+
+    nav ul{
+        margin:0;
+        height: 100%;
+        float: left;
+        width: 330px;
+        border-top: 1px solid  gray; 
+        border-bottom: 0;
+    }
+    nav.menu{
+        height: 100%;
+    }
+    
+    main#main-doc{
+        padding: 0  2.5em 0 23em;
+    } 
+    section.main-section{
+        padding: .75em 0;
+        border-bottom: 1px solid #000000;
+    }
+}

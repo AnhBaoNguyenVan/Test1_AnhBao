@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    height: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+main{
+    /* width: 100%; */
+    background-color: antiquewhite;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 10px 10px 30px 10px #57565642;
+}
+.header{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+.header{
+    background-color: white;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.header-text{
+    height: auto;
+}
+.header-text a{
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 30px;
+    padding: 16px 50px;
+}
+.h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-weight: lighter;
+}
+.header-image{
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 1 60vw;
+}
+.section1{
+}
+.section1>.section1-image{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+
+.section1>.section1-image > img {
+    width: 100%;
+}
+
+.caption{
+    display: flex;
+    place-content: center;
+}
+.head{   
+    background-color: #333;
+}
+.caption h2{
+    border-left: 1px solid ;
+    border-right: 1px solid ;
+    padding: 0 10px;
+    color: white;  
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    place-items: center ;  
+}
+.bg-color{
+    background-color: rgb(230, 227, 227);
+}
+.flex-column h3{
+    margin-bottom: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin: 50px 0;
+}
+footer h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(185, 183, 183);
+    transition: .5s;
+}
+
+.font-weight_bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .header-text{
+        height: 50vh;
+    }
+    .header-image{
+        height: 100vh;
+    }
+}    
+
+/* @media (min-width: 500px){
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+} */

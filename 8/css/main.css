@@ -1,0 +1,135 @@
+body{
+    min-width: 850px;
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-color: rgb(50, 50, 63);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+header > .header-content { 
+    text-align: center;
+}
+header>.header-content h1{
+    color: white;
+    font-size: 50px;
+}
+main{
+    background-color: rgb(73, 79, 95);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+
+}
+main>.main-title{
+    display: flex;
+    justify-content: center;
+}
+main>.main-title>h1{
+    border-bottom: 1px solid white;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+main>.main-content{   
+    display: grid;  
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,1fr);
+    max-width: 900px;
+    margin: 0 auto;
+}
+main>.main-content> a{
+    text-decoration: none;
+}
+
+.opacity p:hover>.hidden{
+    opacity: 1;
+}
+main > .main-btn {
+    display: flex;
+    background-color: rgb(245, 81, 81);
+    width: 100px;
+    justify-content: center;
+    text-decoration: none;
+    margin: 20px 0;
+    margin-bottom: 50px;
+}
+main> .main-btn{
+    padding: 4px;
+    color: wheat;
+}
+.main-btn:hover{
+    background-color: brown;
+}
+footer{
+    background-color: rgb(65, 60, 55);
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+footer>.footer-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer>.footer-text>h3{
+    margin: 10px;
+    font-size: 30px;
+}
+footer>.footer-sosical{
+    width: 100vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+footer>.footer-sosical a{
+    text-decoration: none;
+    color: whitesmoke;
+}  
+footer>.footer-sosical a:hover{
+    padding-top: 10px;
+    color: rgb(212, 189, 126);
+    transition: 0.6s;
+    font-size: 21px;
+}
+.height-100vh{
+    height: 100vh;
+}
+.size-img-component{
+    width: 100%;
+}
+.component1{
+    background-color: rgb(55, 49, 73);
+}
+.component1:hover > .hidden{
+    opacity: 1;
+}
+.caption{
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: -1px;
+}
+.color-red{
+    color: rgb(185, 63, 63);
+}
+.hidden{
+   opacity: 0;
+   color:brown;
+}
+.size-img-component:hover{
+    box-shadow: 1px 1px 20px 1px  rgb(231, 227, 227);
+}
+.font-white{
+    color: aliceblue;
+}
+.size-img-component:hover>span{
+    opacity: 1;
+}

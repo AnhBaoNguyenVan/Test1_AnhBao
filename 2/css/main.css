@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(105, 173, 185, 0.644);
+}
+header{
+    text-align: center;
+}
+main{
+    background-color: rgba(248, 248, 248, 0.616);
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 50vw;
+    height: 70vh;
+    min-width: 500px;
+}
+h4{
+    margin-top: 20px;
+}
+.button{
+    display: flex;
+ 
+    background-color: rgb(102, 184, 251);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.button>a{
+    display: flex;
+    padding: auto;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: aliceblue;
+    place-content: center;
+    place-items: center;
+
+}
+.button:hover{
+    background-color: rgb(9, 165, 255);
+}

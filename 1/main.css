@@ -1,0 +1,136 @@
+:root{
+    --grid-column:8;
+}
+body{
+    background-color: rgb(27, 26, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    
+}
+.vertical-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: black;  
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+.column{
+    width: calc(100%/var(--grid-column));
+    margin: 1px;
+}
+.justify-centered{
+    justify-content: center;
+}
+.section1{
+    /* background-color: aliceblue; */
+    display: grid;
+}
+.section1 > .section1-content{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.section1 > .section1-content > .section1-content_h1{
+    position: absolute;
+    color: whitesmoke;   
+}
+.font-size-section1{
+    font-size: 30px;
+    color: whitesmoke;   
+}
+.section1 > .section1-content > .section1-content_h1 h1{
+    margin-bottom: -1px;
+} 
+.section1 > .section1-content > img{
+    height: auto;
+    width: 100%;
+}
+.section2{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+}
+.section2>.section2-title {
+    display: flex;
+    color: rgb(160, 156, 156);
+    border-bottom: solid 1px beige;
+    margin-left: calc(100%/var(--grid-column)*1);
+    margin-right: calc(100%/var(--grid-column)*1) ;
+    height: 50px;
+}
+.section2>.section2-content{
+    display: flex;
+    flex-direction: row;
+}
+.section2>.section2-content>.section2-content_p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12px;
+    width: calc(100%/var(--grid-column)*4); 
+}
+.section2>.section2-content>.section2-content_image{ 
+    margin-top: 15px;
+    width: calc(100%/var(--grid-column)*2);
+}
+.section2>.section2-content>.section2-content_image img{
+    height: 8rem;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+.section3>.section3-title{
+    display: flex;
+    color: rgb(160, 156, 156);
+    border-bottom: solid 1px beige;
+    margin-left: calc(100%/var(--grid-column)*1);
+    margin-right: calc(100%/var(--grid-column)*1) ;
+    height: 50px;
+}
+.section3>.section3-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section3>.section3-content>.section3-content-main{
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* tao 2 khoang trong 2 side */
+.width_side{
+    width: calc(100%/var(--grid-column));
+}
+.justify-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.font-color{
+    color: rgb(160, 156, 156);
+}
+/* size anh section3 */
+.section3-image_size{
+    width: 10rem;
+}
+.column-ss3{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    place-items: center;
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
